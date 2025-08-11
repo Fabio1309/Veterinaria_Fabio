@@ -29,6 +29,10 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
+    public IActionResult Productos()
+    {
+        return View();
+    }
     public IActionResult RegistroMascota()
     {
         return View();
